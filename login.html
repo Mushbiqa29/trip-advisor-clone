@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="login.css" />
+
+</head>
+<body>
+      <img class="XpHHt _Z" src="https://static.tacdn.com/img2/brand_refresh/special/pride_month_Tripadvisor_lockup_horizontal_secondary.svg" alt="Tripadvisor" style="width: 200px;height:200px;position: absolute;top: -40px;left: 10px; pointer-events: none;">
+   <div class="flight-wrapper">
+     <div class="border">
+        <div class="container">
+    <div class="card" id="card">
+      <div class="front">
+        <h2>Login</h2>
+        <form onsubmit="return goToPage()">
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <span id="flipToSignup">Sign Up</span></p>
+      </div>
+
+      <div class="back">
+        <h2>Sign Up</h2>
+        <form onsubmit="return goToPage()">
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button     type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <span id="flipToLogin">Login</span></p>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="plane">
+        <i class="fas fa-plane travel-icon" style="top: 10%; left: 20%;"></i>
+    </div>
+   </div>
+  <script src="login.js"></script>
+</body>
+</html>
